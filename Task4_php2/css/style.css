@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+#home {
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.back {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.432);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    position: fixed;
+    z-index: 10;
+}
+
+
+.logo {
+    color: #644e2f;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 20px 0;
+    font-family: "Pacifico", cursive;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+
+nav ul li {
+    padding: 28px 12px;
+    font-size: 18px;
+}
+
+
+nav ul li a {
+    color: #644e2f;
+    text-decoration: none;
+}
+
+
+nav ul li a:hover {
+    color: #3f3020;
+}
+
+#menu {
+    display: none;
+}
+
+
+nav label {
+    display: none;
+    font-size: 25px;
+    color: #8b6f47;
+    cursor: pointer;
+}
+
+.home_contant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    z-index: 6;
+}
+
+
+.home {
+    width: 600px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+
+.home p {
+    font-size: 20px;
+    padding-bottom: 20px;
+    line-height: 1.8;
+}
+
+
+.home .main {
+    font-size: 52px;
+    font-family: "Pacifico", cursive;
+    
+}
+
+
+.button {
+    margin-top: 20px;
+}
+
+
+.button a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    padding: 12px 18px;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+
+.button a:hover {
+    background-color: #8b6f47;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        padding: 0 25px;
+    }
+
+
+    .logo {
+        font-size: 28px;
+        padding: 18px 0;
+    }
+
+
+    nav label {
+        display: block;
+    }
+
+
+    nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.432);
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    nav ul li {
+        padding: 15px;
+    }
+
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+
+
+    #menu:checked ~ ul {
+        display: flex;
+    }
+
+
+    .home {
+        width: 90%;
+        padding: 20px;
+    }
+
+
+    .home p {
+        font-size: 17px;
+    }
+
+
+    .home .main {
+        font-size: 38px;
+    }
+
+
+    .button a {
+        margin: 7px;
+        padding: 10px 14px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    nav {
+        padding: 0 18px;
+    }
+
+
+    .logo {
+        font-size: 24px;
+    }
+
+
+    .home .main {
+        font-size: 32px;
+    }
+
+
+    .home p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .button a {
+        width: 180px;
+        margin: 5px;
+    }
+
+}
+
+/****************** PRODUCTS ******************8*/
+
+.products_page {
+    padding-top: 130px;
+    min-height: 100vh;
+    background-color: #f8f5f0;
+    text-align: center;
+}
+
+.products_page h1 {
+    color: #5c482c;
+    margin-bottom: 10px;
+    font-family: "Pacifico", cursive;
+}
+
+.products_text {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.products_page .card {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-img-top {
+    height: 280px;
+    object-fit: cover;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    nav,
+    .products_nav {
+        padding: 0 25px;
+    }
+
+    .logo {
+        font-size: 28px;
+        padding: 18px 0;
+    }
+
+    nav label,
+    .products_nav label {
+        display: block;
+    }
+
+    nav ul,
+    .products_nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.432);
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li,
+    .products_nav ul li {
+        padding: 15px;
+    }
+
+    nav ul li a,
+    .products_nav ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    #menu:checked ~ ul {
+        display: flex;
+    }
+
+
+    .home {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .home p {
+        font-size: 17px;
+    }
+
+    .home .main {
+        font-size: 38px;
+    }
+
+    .button a {
+        margin: 7px;
+        padding: 10px 14px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    nav,
+    .products_nav {
+        padding: 0 18px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .home .main {
+        font-size: 32px;
+    }
+
+    .home p {
+        font-size: 16px;
+
+        line-height: 1.6;
+    }
+
+    .button {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .button a {
+        width: 180px;
+        margin: 5px;
+    }
+
+}
+
+/*************** ACCOUNT *******************/
+
+.account_page {
+    padding-top: 130px;
+    min-height: 100vh;
+    background-color: #f8f5f0;
+    text-align: center;
+}
+
+.account_page h1 {
+    color: #8b6f47;
+    margin-bottom: 30px;
+}
+
+.account_form {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.account_form label {
+    color: #3f3020;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.account_form .btn {
+    margin-top: 10px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .account_form {
+        width: 85%;
+        padding: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .account_form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .account_page {
+        padding-top: 110px;
+    }
+
+}
